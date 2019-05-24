@@ -1,0 +1,10 @@
+<ion-content class="background-color">
+  <!-- <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles" refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher> -->
+  <ion-tabs class="relative" color="primary" tabsPlacement="top">
+    <ion-tab tabTitle="Upcoming Bookings" [root]="tab1root" [rootParams]="upcomingbooking"></ion-tab>
+    <ion-tab tabTitle="Past Bookings" [root]="tab2root" [rootParams]="pastbooking"></ion-tab>
+  </ion-tabs>
+</ion-content>
